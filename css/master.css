@@ -8,7 +8,7 @@
 }
 
 section {
-  max-width: 1000px;
+  max-width: 1068px;
   margin: 0 auto;
 }
 
@@ -49,7 +49,24 @@ h1, h2 {
   font-size: 24px;
 }
 
-div.gradient-background {
+ul.carousel {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+ul.carousel li {
+  display: block;
+  transform: scale(0.9);
+}
+
+ul.carousel li img {
+  max-width: 876px;
+  height: auto;
+}
+
+.gradient-background {
   padding: 30px 0;
   background: linear-gradient(to bottom, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
 }
