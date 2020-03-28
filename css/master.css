@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.4;
 }
 
 section {
@@ -24,6 +25,7 @@ footer p {
 
 h1, h2 {
   font-family: 'Bungee';
+  margin: 24px 0;
 }
 
 .hero {
@@ -48,6 +50,7 @@ h1, h2 {
 }
 
 div.gradient-background {
+  padding: 30px 0;
   background: linear-gradient(to bottom, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
 }
 
@@ -61,17 +64,31 @@ div.gradient-background {
   font-size: 24px;
 }
 
-.details ul {
-  display: grid;
-  justify-content: center;
-
-}
-
 .details ul li {
-  list-style: none;
-  text-align: left;
   color: #3D1132;
   font-size: 24px;
+}
+
+#game-features ul {
+  list-style: none;
+}
+
+#game-features ul li {
+  margin: 18px 0;
+}
+
+#game-features ul li::before {
+  content: '-';
+}
+
+#reqs ul {
+  display: grid;
+  justify-content: center;
+  list-style: none;
+}
+
+#reqs ul li {
+  text-align: left;
 }
 
 .egg {
