@@ -3,6 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 12px;
 }
 
 h1, h2 {
@@ -20,17 +37,59 @@ h1, h2 {
   background-size: contain;
 }
 
-.intro h1, .intro p {
-  color: #FFF
+.intro h1 {
+  color: #FCFDFC;
+  font-size: 50px;
+}
+
+.intro p {
+  color: #FFF;
+  font-size: 24px;
 }
 
 div.gradient-background {
   background: linear-gradient(to bottom, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
 }
 
-.details {
+.details h2 {
   color: #73263D;
+  font-size: 48px;
 }
+
+.details p {
+  color: #3D1132;
+  font-size: 24px;
+}
+
+.details ul {
+  display: grid;
+  justify-content: center;
+
+}
+
+.details ul li {
+  list-style: none;
+  text-align: left;
+  color: #3D1132;
+  font-size: 24px;
+}
+
+.egg {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.egg::before, .egg::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  margin: 0 6px;
+  background-color: #FFF;
+  height: 4px;
+  width: 30%;
+}
+
 
 #logo {
   position: absolute;
