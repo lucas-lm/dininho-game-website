@@ -69,6 +69,29 @@ div.gradient-background {
   font-size: 24px;
 }
 
+#carousel button {
+  all: unset;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 0;
+  background: url(/assets/btn.svg) no-repeat;
+  background-size: cover;
+  color: #FAFFFF;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#carousel button:hover {
+  color: silver;
+}
+
+#carousel button:active {
+  color: silver;
+}
+
 #game-features ul {
   list-style: none;
 }
