@@ -7,8 +7,10 @@
   let { start: currentIndex = 0} = carousel.dataset
   currentIndex = Number(currentIndex)
 
-  carousel.style.transform = `translateX(-${initialOffset + 876*(currentIndex-1)}px)`
-    items[currentIndex].style.transform = 'scale(1)'
+  currentIndex = currentIndex >= items.length || currentIndex < 0 ? 0 : Math.floor(currentIndex)
+  const offset = currentIndex === 0 ? 0 : initialOffset + 876*(currentIndex-1)
+  carousel.style.transform = `translateX(-${offset}px)`
+  items[currentIndex].style.transform = 'scale(1)'
 
   const next = () => {
     // if we are in the end, do nothing
@@ -64,5 +66,8 @@
 
   carouselContainer.addEventListener('mouseenter', showButtons)
   carouselContainer.addEventListener('mouseleave', hideButtons)
+
+  if (currentIndex+1 < items.length) items[currentIndex+1].addEventListener('click', next)
+  if (currentIndex-1 >=0) items[currentIndex-1].addEventListener('click', previous)
 
 })()
