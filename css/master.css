@@ -28,6 +28,10 @@ h1, h2 {
   margin: 24px 0;
 }
 
+button {
+  all: unset
+}
+
 .hero {
   width: 100%;
   height: 720px;
@@ -52,7 +56,6 @@ h1, h2 {
 ul.carousel {
   list-style: none;
   display: flex;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -86,8 +89,32 @@ ul.carousel li img {
   font-size: 24px;
 }
 
-#carousel button {
-  all: unset;
+#carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel button.left, #carousel button.right {
+  position: absolute;
+  top: 250px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+
+#carousel button.left {
+  left: 10px;
+}
+
+#carousel button.right {
+  right: 10px;
+}
+
+button#play {
   display: block;
   width: 320px;
   margin: 0 auto;
@@ -101,11 +128,11 @@ ul.carousel li img {
   cursor: pointer;
 }
 
-#carousel button:hover {
+button#play:hover {
   color: silver;
 }
 
-#carousel button:active {
+button#play:active {
   color: silver;
 }
 
