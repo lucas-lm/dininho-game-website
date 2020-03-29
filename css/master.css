@@ -67,6 +67,7 @@ ul.carousel li {
 ul.carousel li img {
   max-width: 876px;
   height: auto;
+  cursor: pointer;
 }
 
 .gradient-background {

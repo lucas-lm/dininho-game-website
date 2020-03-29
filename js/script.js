@@ -26,6 +26,7 @@
     // add new event listeners based on current position and update styles
     carousel.style.transform = `translateX(-${initialOffset + 876*(currentIndex-1)}px)`
     items[currentIndex].style.transform = 'scale(1)'
+    items[currentIndex].style.cursor = 'initial'
     if (currentIndex+1 < items.length) items[currentIndex+1].addEventListener('click', next)
     items[currentIndex-1].addEventListener('click', previous)
   }
@@ -45,6 +46,7 @@
     const offset = currentIndex === 0 ? 0 : initialOffset + 876*(currentIndex-1)
     carousel.style.transform = `translateX(-${offset}px)`
     items[currentIndex].style.transform = 'scale(1)'
+    items[currentIndex].style.cursor = 'initial'
     items[currentIndex+1].addEventListener('click', next)
     if (currentIndex-1 >=0) items[currentIndex-1].addEventListener('click', previous)
   }
@@ -68,6 +70,6 @@
   carouselContainer.addEventListener('mouseleave', hideButtons)
 
   if (currentIndex+1 < items.length) items[currentIndex+1].addEventListener('click', next)
-  if (currentIndex-1 >=0) items[currentIndex-1].addEventListener('click', previous)
+  if (currentIndex-1 >= 0) items[currentIndex-1].addEventListener('click', previous)
 
 })()
