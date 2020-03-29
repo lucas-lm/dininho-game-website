@@ -138,12 +138,18 @@ ul.carousel li img, ul.carousel li video {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
-  width: 30px;
-  height: 30px;
+  padding: 6px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #FFF176;
   font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #4A148C;
   cursor: pointer;
+  opacity: 0.7;
   visibility: hidden;
 
 }
