@@ -9,6 +9,13 @@
   currentIndex = Number(currentIndex)
   currentIndex = currentIndex >= items.length || currentIndex < 0 ? 0 : Math.floor(currentIndex)
 
+  const finger = {
+    isTouching: false,
+    startTime: null,
+    startPosition: {x: null, y: null},
+    endPosition: {x: null, y: null}
+  }
+
   const frame = {
     get width() {
       return items[currentIndex].clientWidth
@@ -82,6 +89,41 @@
 
   carouselContainer.addEventListener('mouseenter', showButtons)
   carouselContainer.addEventListener('mouseleave', hideButtons)
+
+  carouselContainer.addEventListener('touchstart', event => { 
+    const { touches, timeStamp } = event
+    if (!finger.isTouching && touches.length === 1) {
+      finger.isTouching = true
+      finger.startPosition.x = touches[0].clientX
+      finger.startPosition.y = touches[0].clientY
+      finger.startTime = timeStamp
+    }
+  })
+
+  carouselContainer.addEventListener('touchmove', event => {
+    const { touches } = event
+    if (finger.isTouching) {
+      finger.endPosition.x = touches[0].clientX
+      finger.endPosition.y = touches[0].clientY
+    }
+  })
+
+  carouselContainer.addEventListener('touchend', event => {
+    if (finger.isTouching) {
+      finger.isTouching = false
+      const { timeStamp } = event
+      const deltaX = finger.startPosition.x - finger.endPosition.x
+      const deltaY = finger.startPosition.y - finger.endPosition.y
+      const deltaT = timeStamp - finger.startTime
+      // condition to consider a swipe
+      const swipe = Math.abs(deltaX) > 50 && Math.abs(deltaY) < 250 && deltaT < 500
+      if (swipe) {
+        // when swipe, do it
+        if (deltaX > 0) return next()
+        if (deltaX < 0) return previous()
+      }
+    }
+  })
 
   if (currentIndex+1 < items.length) items[currentIndex+1].addEventListener('click', next)
   if (currentIndex-1 >= 0) items[currentIndex-1].addEventListener('click', previous)
