@@ -102,7 +102,7 @@ ul.carousel li {
 }
 
 ul.carousel li img, ul.carousel li video {
-  width: 50vw;
+  width: 70vw;
   max-width: 876px;
   height: auto;
   cursor: pointer;
@@ -224,7 +224,8 @@ button#play:active {
   margin: 0 6px;
   background-color: #FFF;
   height: 4px;
-  width: 30%;
+  width: 40%;
+  max-width: 600px;
 }
 
 #backdrop {
@@ -302,6 +303,19 @@ button#play:active {
 
   #logo img {
     width: 50vw;
+  }
+  
+  .egg::before, .egg::after {
+    top: -12px;
+    width: calc(50% - 50px);
+  }
+
+  img[src="./assets/egg.svg"] {
+    width: 24px;
+  }
+
+  img[src="./assets/eggs.svg"] {
+    width: 50px;
   }
 
 }
