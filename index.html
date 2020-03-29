@@ -22,7 +22,7 @@
       <p>Eu confio em você! Vá e seja o herói da Dinolândia.</p>
     </section>
     
-    <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt=""></div>
+    <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt="" data-clicked="false"></div>
 
     <div class="details">
 
@@ -40,8 +40,9 @@
             <li>
               <video width="876" height="auto" controls>
                 <source src="/assets/trailler.mp4" type="video/mp4">
-                <!-- <source src="video.ogg" type="video/ogg"> -->
-                Your browser does not support the video tag.
+                <!-- <source src="/assets/trailler.ogg" type="video/ogg"> (fallback)-->
+                <p>Ihhh... Não deu pra exibir o trailer :/</p>
+                <p>Tente atualizar seu navegador, ou então tente usar outro. Recomendamos o Google Chrome.</p>
               </video>
             </li>
             <li><img src="/assets/carousel/lava3.png" alt=""></li>
@@ -60,7 +61,7 @@
         <button id="play">Jogar</button>
       </section>
 
-      <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt=""></div>
+      <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt="" data-clicked="false"></div>
 
       <section id="game-features">
         <h2>jogo tem</h2>
@@ -83,7 +84,7 @@
         </ul>
       </section>
 
-      <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt=""></div>
+      <div class="egg" data-clicked="false"><img src="./assets/egg.svg" alt="" data-clicked="false"></div>
 
       <section id="reqs">
         <h2>Requisitos</h2>
@@ -98,14 +99,16 @@
       </section>
     </div>
     
-    <div class="egg" data-clicked="false"><img src="./assets/eggs.svg" alt=""></div>
+    <div class="egg"><img src="./assets/eggs.svg" alt="" data-clicked="false"></div>
 
     <footer>
       <p>Dininho Adventures Copyright @ 2020 - 2020</p>
       <div> social </div>
     </footer>
   </div>
+  <a href="/"><div id="keys"></div></a>
+  <div id="backdrop"></div>
   <script src="/js/script.js"></script>
-
+  <script src="/js/easter-egg.js"></script>
 </body>
 </html>

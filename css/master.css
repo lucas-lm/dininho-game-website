@@ -159,6 +159,18 @@ button#play:active {
   text-align: left;
 }
 
+#keys {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 80px;
+  height: 160px;
+  animation: keys 1350ms linear infinite;
+  visibility: hidden;
+}
+
 .egg {
   text-align: center;
   margin: 24px 0;
@@ -175,10 +187,41 @@ button#play:active {
   width: 30%;
 }
 
+#backdrop {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9000;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  visibility: hidden;
+}
 
 #logo {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@keyframes keys {
+  0% {
+    background: url(/assets/key/interrogachave1.png);
+  }
+  20% {
+    background: url(/assets/key/interrogachave2.png);
+  }
+  40% {
+    background: url(/assets/key/interrogachave3.png);
+  }
+  60% {
+    background: url(/assets/key/interrogachave4.png);
+  }
+  80% {
+    background: url(/assets/key/interrogachave5.png);
+  }
+  100% {
+    background: url(/assets/key/interrogachave6.png);
+  }
 }
