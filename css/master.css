@@ -11,9 +11,9 @@
   font-size: 12px;
 }
 
-section {
+section, article {
   width: 90%;
-  max-width: 1068px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -135,7 +135,8 @@ ul.carousel li img, ul.carousel li video {
 
 #carousel button.left, #carousel button.right {
   position: absolute;
-  top: 250px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1000;
   width: 30px;
   height: 30px;
