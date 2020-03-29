@@ -245,7 +245,7 @@ button#play:active {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   :root {
     font-size: 8px;
     font-weight: bold;
