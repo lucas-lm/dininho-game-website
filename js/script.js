@@ -86,4 +86,7 @@
   if (currentIndex+1 < items.length) items[currentIndex+1].addEventListener('click', next)
   if (currentIndex-1 >= 0) items[currentIndex-1].addEventListener('click', previous)
 
+  window.addEventListener('resize', () => frame.move())
+
+  console.log(frame)
 })()

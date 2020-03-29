@@ -102,6 +102,7 @@ ul.carousel li {
 }
 
 ul.carousel li img, ul.carousel li video {
+  width: 50vw;
   max-width: 876px;
   height: auto;
   cursor: pointer;
@@ -158,7 +159,7 @@ button#play {
   display: block;
   width: 320px;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 2rem 0;
   background: url(/assets/btn.png) no-repeat center;
   background-size: contain;
   color: #FAFFFF;
@@ -265,10 +266,6 @@ button#play:active {
 
   .intro h1 {
     font-size: 3.5rem;
-  }
-
-  ul.carousel li img, ul.carousel li video {
-    max-width: 320px;
   }
 
   #game-features ul li {
