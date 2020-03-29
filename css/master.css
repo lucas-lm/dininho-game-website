@@ -221,6 +221,7 @@ button#play:active {
 .egg {
   text-align: center;
   margin: 24px 0;
+  cursor: pointer;
 }
 
 .egg::before, .egg::after {
