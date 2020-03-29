@@ -42,8 +42,8 @@ button, a {
 }
 
 .hero {
-  width: 100%;
-  height: 720px;
+  width: 100vw;
+  height: 50vw;
   background: url(../assets/hero-no-parallax.svg) no-repeat bottom left;
   background-size: cover;
   margin-bottom: -6px;
@@ -240,28 +240,85 @@ button#play:active {
 
 #logo {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
-@media only screen and (max-width: 425px) {
+#logo img {
+  width: 420px;
+  height: auto;
+}
+
+@media only screen and (min-width: 1180px) {
+  .hero {
+    height: 720px;
+    background: url(../assets/hero-no-parallax.svg) no-repeat bottom left;
+    background-size: cover;
+  }
+  
+  #logo {
+    top: 50px;
+  }
+  
+  #logo img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .hero {
+    height: 40vw;
+  }
+
+  #logo {
+    top: 30px;
+  }
+  
+  #logo img {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 500px;
+    background: url(../assets/hero-no-parallax.png) no-repeat bottom right;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
   }
 
-  .hero {
-    width: 100%;
-    height: 250px;
-    background: url(../assets/hero-mobile.png) no-repeat top right;
-    background-size: cover;
-    margin-bottom: -6px;
+  #logo {
+    top: 30%;
   }
 
-  .hero a img {
-    width: 190px;
-    height: auto;
+  #logo img {
+    width: 50vw;
+  }
+
+}
+
+@media only screen and (max-width: 488px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .hero {
+    height: 75vw;
+    background: url(../assets/hero-mobile.png) no-repeat top left;
+    background-size: cover;
+  }
+  
+  #logo {
+    top: 30px;
   }
 
   .intro h1 {
@@ -277,6 +334,12 @@ button#play:active {
     font-size: 2.5rem;
   }
 
+}
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    height: 250px;
+  }
 }
 
 @keyframes keys {
