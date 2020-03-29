@@ -31,8 +31,9 @@ h1, h2 {
   margin: 24px 0;
 }
 
-button {
-  all: unset
+button, a {
+  all: unset;
+  cursor: pointer;
 }
 
 .hero {
@@ -132,8 +133,10 @@ ul.carousel li img {
   height: 30px;
   border-radius: 50%;
   background-color: white;
+  font-weight: bold;
   cursor: pointer;
-  /* visibility: hidden; */
+  visibility: hidden;
+
 }
 
 #carousel button.left {
@@ -149,7 +152,7 @@ button#play {
   width: 320px;
   margin: 0 auto;
   padding: 25px 0;
-  background: url(/assets/btn.svg) no-repeat;
+  background: url(/assets/btn.png) no-repeat;
   background-size: cover;
   color: #FAFFFF;
   font-size: 30px;
