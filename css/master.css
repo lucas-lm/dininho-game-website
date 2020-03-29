@@ -21,6 +21,9 @@ footer {
 
 footer p {
   font-size: 12px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #050914;
 }
 
 h1, h2 {
@@ -51,6 +54,35 @@ button {
 .intro p {
   color: #FFF;
   font-size: 24px;
+}
+
+.social-media {
+  width: 256px;
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span.icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+span.icon.discord {
+  background-image: url(/assets/icons/discord.svg);
+}
+
+span.icon.twitter {
+  background-image: url(/assets/icons/twitter.svg);
+}
+
+span.icon.twitch {
+  background-image: url(/assets/icons/twitch.svg);
 }
 
 ul.carousel {
