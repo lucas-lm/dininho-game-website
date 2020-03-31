@@ -68,4 +68,4 @@ Há apenas uma página neste _website_, que é a própria _landing page_.
 
 [CollabCode](https://www.youtube.com/collabcode "Youtube da CollabCode"): \#QuarentenaCode 0 - FrontEnd
 
-[Figma do projeto](https://www.figma.com/file/ymr102dGHLHCINbR1dqYWr/Dininho-Adventures "Figma do projeto")
+Confira [aqui o Figma do projeto](https://www.figma.com/file/ymr102dGHLHCINbR1dqYWr/Dininho-Adventures "Figma do projeto")
