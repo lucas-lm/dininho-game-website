@@ -67,4 +67,5 @@ Há apenas uma página neste _website_, que é a própria _landing page_.
 **Agradeço a CollabCode pela realização do desafio e pela chance de ter participado deste evento**
 
 [CollabCode](https://www.youtube.com/collabcode "Youtube da CollabCode"): \#QuarentenaCode 0 - FrontEnd
+
 [Figma do projeto](https://www.figma.com/file/ymr102dGHLHCINbR1dqYWr/Dininho-Adventures "Figma do projeto")
